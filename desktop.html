@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bgVideo {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            transform: translateX(-50%);
+        }
+
+        .btn:hover {
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <video class="bgVideo" autoplay loop muted src="./assets/desktop.mp4"></video>
+    <script src="./renderer.js"></script>
+</body>
+
+</html>
